@@ -43,9 +43,9 @@
         <label for="pizza-top">Pizza Topping:</label>
         <input type="text" class="form-control" id="pizza-top">
       </div>
-      <span class="btn btn btn-outline-primary" id="add-topping">Add Topping</span>
-      <span class="btn btn btn-outline-primary" id="remove-top">Remove Topping</span>
-      
+      <span class="btn btn-outline-primary" id="add-topping">Add Topping</span>
+      <span class="btn btn-outline-primary" id="remove-top">Remove Topping</span>
+
       <span class="btn btn-primary" id="another-pizza">Order another Pizza</span>
 
       <div class="form-group">
@@ -55,11 +55,35 @@
 
       <div class="form-group">
         <label for="deliver">Do you want your Pizza delivered ?</label>
-        <input type="text" class="form-control" id="delivery">
+        <span class="btn btn-outline-primary" id ="deliver">Yes</span>
+        <span class="btn btn-outline-primary" id ="deliver">No</span>
       </div>
 
       <button type="submit">Submit Order</button>
     </form>
+
+    <h3>Order By:</h3>
+    <ul id="order-by">
+
+    </ul>
+
+    <div id="order-details">    
+      <h3>Your Order Details.</h3>
+      <h4>Customer Details.</h4>
+      <p>Name: <span class="name"></span></p>
+      <p>Email: <span class="email"></span></p>
+      <p>Telephone N.O: <span class="telephone"></span></p>
+
+      <h4>Order Details:</h4>
+      <p>Pizza Size: <span class="size"></span></p>
+      <p>Pizza Crust: <span class="crust"></span></p>
+      <p>Pizza Toppings:</p>
+      <ol id=display-toppings>
+
+      </ol>
+      <p>Delivery Place: <span class="delivery-place"></span></p>
+      <p>Grand Total Prize of your order is: <span class="grand-total"></span></p>
+    </div>
   </div>
 </body>
 </html>
