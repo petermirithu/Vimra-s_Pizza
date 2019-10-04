@@ -34,7 +34,7 @@
       <div id="new-orders">
         <div class="form-group">
           <label for="pizza-size">Pizza Size:</label>
-          <input list="p-size" type="p-size" id="pizza-size" >
+          <input list="p-size" type="p-size" id="pizza-size" class="form-control">
           <datalist id="p-size">
             <option value="Small">@100/=</option>
             <option value="Medium">@200/=</option>
@@ -43,12 +43,39 @@
         </div>
         <div class="form-group">
           <label for="pizza-crust">Pizza Crust:</label>
-          <input type="text" class="form-control" id="pizza-crust">
+          <input type="p-crust" list="p-crust" class="form-control" id="pizza-crust">
+          <datalist id="p-crust">
+            <option value="Crispy crust">@400/=</option>
+            <option value="Cracker Crust">@420/=</option>
+            <option value="Pizza Bagels">@450/=</option>
+            <option value="Detroit Crust">@500/=</option>
+            <option value="Sicilian Style">@550/=</option>
+            <option value="Flat-bread Crust">@580/=</option>
+            <option value="Chicago Deep Dish">@650/=</option>
+            <option value="Pretzel Crust">@700/=</option>
+            <option value="Neopolitan Crust">@700/=</option>
+            <option value="NYC-Style crust">@750/=</option>
+            <option value="Stuffed Dough">@750/=</option>
+            <option value="Focaccia">@800/=</option>
+          </datalist>
         </div>
         <div class="add-top">
           <div class="form-group">
             <label for="pizza-top">Pizza Topping:</label>
-            <input type="text" class="form-control" id="pizza-top">
+            <input type="p-top" list="p-top" class="form-control" id="pizza-top">
+            <datalist id="p-top">
+                <option value="Onions">@100/=</option>
+                <option value="Sausage">@200/=</option>
+                <option value="Pineapple">@250/=</option>
+                <option value="Green Pepper">@300/=</option>
+                <option value="Black Olives">@400/=</option>
+                <option value="Bacon">@420/=</option>
+                <option value="Mushroom">@450/=</option>
+                <option value="Extra Cheese">@480/=</option>
+                <option value="Pepporoni">@500/=</option>
+                <option value="Chicken">@600/=</option>
+                <option value="Beef">@650/=</option>
+            </datalist>
           </div>
         </div>
       </div>
@@ -98,5 +125,13 @@
       <p>Grand Total Prize of your order is: <span class="grand-total"></span></p>
     </div>
   </div>
+
+  
+    
+  
+
+
+
+
 </body>
 </html>
