@@ -150,6 +150,8 @@ $(document).ready(function() {
       var mediumP = 200;
     }else if (inputSize=="Large") {
       var largep= 300
+    }else{
+      alert("Please pick size from the menu only")
     }
     var inputCrust = $("input#pizza-crust").val();
     var inputTop = $("input#pizza-top").val();
@@ -157,6 +159,6 @@ $(document).ready(function() {
     var placeNairobi = $("input#place-nairobi").val();
     var placeNakuru = $("input#place-nakuru").val();
     var placeMombasa = $("input#place-mombasa").val();
-    alert(mediumP,largep)
+    
   });
 });
