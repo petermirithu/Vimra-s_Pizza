@@ -35,7 +35,15 @@ $(document).ready(function() {
                               '<label for="pizza-crust">Pizza Crust:</label>'+
                               '<input type="text" class="form-control" id="pizza-crust">'+
                             '</div>'+
-                            '<div class="form-group">'+
+                            '<div class="add-top">'+
+                              '<div class="form-group">'+
+                                '<label for="pizza-top">Pizza Topping:</label>'+
+                                '<input type="text" class="form-control" id="pizza-top">'+
+                              '</div>'+
+                            '</div>');
+  });
+  $("#add-topping").click(function() {
+    $(".add-top").append('<div class="form-group">'+
                               '<label for="pizza-top">Pizza Topping:</label>'+
                               '<input type="text" class="form-control" id="pizza-top">'+
                             '</div>');
