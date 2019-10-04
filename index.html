@@ -22,7 +22,7 @@
         </div>
         <div class="form-group">
           <label for="email">Email:</label>
-          <input type="text" class="form-control" id="email">
+          <input type="email" class="form-control" id="email">
         </div>
         <div class="form-group">
           <label for="telephone">Telephone N.o :</label>
@@ -45,11 +45,20 @@
       </div>
       <span class="btn btn btn-outline-primary" id="add-topping">Add Topping</span>
       <span class="btn btn btn-outline-primary" id="remove-top">Remove Topping</span>
+      
+      <span class="btn btn-primary" id="another-pizza">Order another Pizza</span>
+
       <div class="form-group">
-        <label for="">:</label>
-        <input type="text" class="form-control" id="pizza-top">
+        <label for="results">Total Prize for the pizza:</label>
+        <input type="number" class="form-control" id="results">
       </div>
 
+      <div class="form-group">
+        <label for="deliver">Do you want your Pizza delivered ?</label>
+        <input type="text" class="form-control" id="delivery">
+      </div>
+
+      <button type="submit">Submit Order</button>
     </form>
   </div>
 </body>
