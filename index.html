@@ -31,17 +31,19 @@
       </div>
 
       <h2>Make your order.</h2>
-      <div class="form-group">
-        <label for="pizza-size">Pizza Size:</label>
-        <input type="text" class="form-control" id="pizza-size">
-      </div>
-      <div class="form-group">
-        <label for="pizza-crust">Pizza Crust:</label>
-        <input type="text" class="form-control" id="pizza-crust">
-      </div>
-      <div class="form-group">
-        <label for="pizza-top">Pizza Topping:</label>
-        <input type="text" class="form-control" id="pizza-top">
+      <div id="new-orders">
+        <div class="form-group">
+          <label for="pizza-size">Pizza Size:</label>
+          <input type="text" class="form-control" id="pizza-size">
+        </div>
+        <div class="form-group">
+          <label for="pizza-crust">Pizza Crust:</label>
+          <input type="text" class="form-control" id="pizza-crust">
+        </div>
+        <div class="form-group">
+          <label for="pizza-top">Pizza Topping:</label>
+          <input type="text" class="form-control" id="pizza-top">
+        </div>
       </div>
       <span class="btn btn-outline-primary" id="add-topping">Add Topping</span>
       <span class="btn btn-outline-primary" id="remove-top">Remove Topping</span>
@@ -61,6 +63,7 @@
 
       <button type="submit">Submit Order</button>
     </form>
+    <br>
 
     <h3>Order By:</h3>
     <ul id="order-by">
