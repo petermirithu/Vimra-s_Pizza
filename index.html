@@ -34,7 +34,12 @@
       <div id="new-orders">
         <div class="form-group">
           <label for="pizza-size">Pizza Size:</label>
-          <input type="text" class="form-control" id="pizza-size">
+          <input list="p-size" type="p-size" id="pizza-size" >
+          <datalist id="p-size">
+            <option value="Small">@100/=</option>
+            <option value="Medium">@200/=</option>
+            <option value="Large">@300/=</option>
+          </datalist>
         </div>
         <div class="form-group">
           <label for="pizza-crust">Pizza Crust:</label>
@@ -59,8 +64,11 @@
 
       <div class="form-group">
         <label for="deliver">Do you want your Pizza delivered ?</label>
-        <span class="btn btn-outline-primary" id ="deliver">Yes</span>
-        <span class="btn btn-outline-primary" id ="deliver">No</span>
+        <span class="btn btn-outline-primary" id ="deliver-yes">Yes</span>
+        <span class="btn btn-outline-primary" id ="deliver-no">No</span>
+      </div>
+      <div id="deliver-to-place">
+        
       </div>
 
       <button type="submit">Submit Order</button>

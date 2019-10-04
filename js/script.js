@@ -48,4 +48,22 @@ $(document).ready(function() {
                               '<input type="text" class="form-control" id="pizza-top">'+
                             '</div>');
   });
+  $("#deliver-yes").click(function() {
+    $("#deliver-to-place").append('<label for="county">Select County;</label>'+
+                                  '<input type="text" class="form-control" id="county">'+
+                                  '<label for="place">Select the deliver point:</label>'+
+                                  '<input type="text" class="form-control" id="place">');
+  });
+
+  $("form#order-form").submit(function (event) {
+    event.preventDefault();
+    var inputpersonName = $("input#names").val();
+    var inputpersonEmail = $("input#email").val();
+    var inputpersonTelephone = $("input#telephone").val();
+   
+    var newOrder = new Order(inputpersonName, inputpersonEmail, inputpersonTelephone)
+
+    var inputSize = $("input#pizza-size").val();
+    
+  });
 });
