@@ -5,19 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Vimra's pizza.</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">   
   <link href="css/styles.css" rel="stylesheet" type="text/css">    
   <script src="js/jquery.js"></script>
   <script src="js//script.js"></script>
 </head>
 <body>
-  <div class="bghome">
+  <div class="bghome">        
+      <div class="topnav" id="myTopnav">          
+          <a href="#" class="active">Home</a>
+          <a href="#">News</a>
+          <a href="#">Contact</a>
+          <a href="#">About</a>    
+      </div>
+
+      <div class="logo">
+          🅥🅘🅜🅡🅐'🅢 🅟🅘🅩🅩🅐
+      </div>
+      
+      <div id="slideshowContainer">
+          <div class="w3-content w3-section" style="max-width:300px">
+            <img src="./images/Screenshot from 2019-10-04 12-29-24.png" class="mySlides" style="width:100%">
+            <img src="./images/Screenshot from 2019-10-04 12-28-30.png" class="mySlides" style="width:100%">
+            <img src="./images/Screenshot from 2019-10-04 12-27-56.png" class="mySlides" style="width:100%">
+            <img src="./images/Screenshot from 2019-10-04 12-29-10.png" class="mySlides" style="width:100%">
+            <img src="./images/Screenshot from 2019-10-04 12-28-43.png" class="mySlides" style="width:100%">
+            
+          </div>
+          <script>
+              var myIndex = 0;
+              carousel();
+              
+              function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";  
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}    
+                x[myIndex-1].style.display = "block";  
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+              }
+              </script>
+        </div>
     <div class="welcome">
+    
       <h1>Pizza For EveryOne!</h1>
       <p>Welcome to Vimra's Pizza where we offer what is best for you.</p>
     </div>
   </div>
-  
+
 
 
 
