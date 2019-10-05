@@ -26,8 +26,57 @@ function Deliver(county, place) {
 }
 
 var counter= 1;
+var counter2=1;
+
 
 $(document).ready(function() {
+
+  $("#add-topping").click(function() {
+    var $newDivTop=$('<div class="form-group">'+
+    '<label for="pizza-top">Pizza Topping:</label>'+
+    '<input type="p-top" list="p-top" class="form-control" id="pizza-top">'+
+    '<datalist id="p-top">'+
+        '<option value="Onions">@100/=</option>'+
+        '<option value="Sausage">@200/=</option>'+
+        '<option value="Pineapple">@250/=</option>'+
+        '<option value="Green Pepper">@300/=</option>'+
+        '<option value="Black Olives">@400/=</option>'+
+        '<option value="Bacon">@420/=</option>'+
+        '<option value="Mushroom">@450/=</option>'+
+        '<option value="Extra Cheese">@480/=</option>'+
+        '<option value="Pepporoni">@500/=</option>'+
+        '<option value="Chicken">@600/=</option>'+
+        '<option value="Beef">@650/=</option>'+
+    '</datalist>'+
+    '<span class="btn btn-outline-primary" id="remove-top">Remove Topping</span>'+
+  '</div>');
+  $newDivTop.attr("id", "newDivTop" + counter2++);
+  $("#add-top").append($newDivTop);
+  });
+
+  $("#add-topping_x").click(function() {
+    var $newDivTop=$('<div class="form-group">'+
+    '<label for="pizza-top">Pizza Topping:</label>'+
+    '<input type="p-top" list="p-top" class="form-control" id="pizza-top">'+
+    '<datalist id="p-top">'+
+        '<option value="Onions">@100/=</option>'+
+        '<option value="Sausage">@200/=</option>'+
+        '<option value="Pineapple">@250/=</option>'+
+        '<option value="Green Pepper">@300/=</option>'+
+        '<option value="Black Olives">@400/=</option>'+
+        '<option value="Bacon">@420/=</option>'+
+        '<option value="Mushroom">@450/=</option>'+
+        '<option value="Extra Cheese">@480/=</option>'+
+        '<option value="Pepporoni">@500/=</option>'+
+        '<option value="Chicken">@600/=</option>'+
+        '<option value="Beef">@650/=</option>'+
+    '</datalist>'+
+    '<span class="btn btn-outline-primary" id="remove-top">Remove Topping</span>'+
+  '</div>');
+  $newDivTop.attr("id", "newDivTop_x" + counter2++);
+  $("newDiv1").append($newDivTop);
+  });
+
   $("#another-pizza").click(function() {
     var $newDiv = $('<div class="form-group">'+
     '<label for="pizza-size">Pizza Size:</label>'+
@@ -56,7 +105,7 @@ $(document).ready(function() {
       '<option value="Focaccia">@800/=</option>'+
     '</datalist>'+
   '</div>'+
-  '<div class="add-top">'+
+  '<div id="add-top">'+
     '<div class="form-group">'+
       '<label for="pizza-top">Pizza Topping:</label>'+
       '<input type="p-top" list="p-top" class="form-control" id="pizza-top">'+
@@ -73,31 +122,15 @@ $(document).ready(function() {
           '<option value="Chicken">@600/=</option>'+
           '<option value="Beef">@650/=</option>'+
       '</datalist>'+
+      '<span class="btn btn-outline-primary" id="add-topping_x">Add Topping</span>'+
+      '<span class="btn btn-outline-primary" id="remove-top">Remove Topping</span>'+
     '</div>'+
   '</div>');
   $newDiv.attr("id", "newDiv" + counter++);
   $("#new-orders").append($newDiv);
 
   });
-  $("#add-topping").click(function() {
-    $(".add-top").append('<div class="form-group">'+
-    '<label for="pizza-top">Pizza Topping:</label>'+
-    '<input type="p-top" list="p-top" class="form-control" id="pizza-top">'+
-    '<datalist id="p-top">'+
-        '<option value="Onions">@100/=</option>'+
-        '<option value="Sausage">@200/=</option>'+
-        '<option value="Pineapple">@250/=</option>'+
-        '<option value="Green Pepper">@300/=</option>'+
-        '<option value="Black Olives">@400/=</option>'+
-        '<option value="Bacon">@420/=</option>'+
-        '<option value="Mushroom">@450/=</option>'+
-        '<option value="Extra Cheese">@480/=</option>'+
-        '<option value="Pepporoni">@500/=</option>'+
-        '<option value="Chicken">@600/=</option>'+
-        '<option value="Beef">@650/=</option>'+
-    '</datalist>'+
-  '</div>');
-  });
+
   $("#deliver-yes").click(function() {
     $("#deliver-to-place").append('<h3>Only select one county and place</h3>'+
     '<div class="nairobi">'+
@@ -169,7 +202,7 @@ $(document).ready(function() {
     }else{
       var size1=0;
     }
-
+ 
     var inputSize =$("#newDiv2 input#pizza-size").val();
     if (inputSize == "Small") {
       var size2 = 100;
@@ -203,6 +236,7 @@ $(document).ready(function() {
       var size4=0;
     }
 
+    
     var inputCrust = $("input#pizza-crust").val();
     if (inputCrust=="Cripsy crust") {
       var crust0=400;
@@ -337,9 +371,271 @@ $(document).ready(function() {
     }else{
       var crust4=0;
     }
-    alert(crust0+crust1+crust2+crust3+crust4);
 
     var inputTop = $("input#pizza-top").val();
+    if (inputTop=="Onions"){
+      var top0=100;
+    }else if (inputTop=="Sausage"){
+      var top0=200;
+    }else if(inputTop=="Pineapple"){
+      var top0=250;
+    }else if(inputTop=="Green Pepper"){
+      var top0=300;
+    }else if(inputTop=="Black Olives"){
+      var top0=400;
+    }else if(inputTop=="Bacon"){
+      var top0=420;
+    }else if(inputTop=="Mushroom"){
+      var top0=450;
+    }else if(inputTop=="Extra Cheese"){
+      var top0=480;
+    }else if(inputTop=="Pepporoni"){
+      var top0=500;
+    }else if(inputTop=="Chicken"){
+      var top0=600;
+    }else if(inputTop=="Beef"){
+      var top0=650;
+    }
+    
+    var inputTop = $("#newDiv1 input#pizza-top").val();
+    if (inputTop=="Onions"){
+      var top1=100;
+    }else if (inputTop=="Sausage"){
+      var top1=200;
+    }else if(inputTop=="Pineapple"){
+      var top1=250;
+    }else if(inputTop=="Green Pepper"){
+      var top1=300;
+    }else if(inputTop=="Black Olives"){
+      var top1=400;
+    }else if(inputTop=="Bacon"){
+      var top1=420;
+    }else if(inputTop=="Mushroom"){
+      var top1=450;
+    }else if(inputTop=="Extra Cheese"){
+      var top1=480;
+    }else if(inputTop=="Pepporoni"){
+      var top1=500;
+    }else if(inputTop=="Chicken"){
+      var top1=600;
+    }else if(inputTop=="Beef"){
+      var top1=650;
+    }
+
+    var inputTop = $("#newDiv2 input#pizza-top").val();
+    if (inputTop=="Onions"){
+      var top2=100;
+    }else if (inputTop=="Sausage"){
+      var top2=200;
+    }else if(inputTop=="Pineapple"){
+      var top2=250;
+    }else if(inputTop=="Green Pepper"){
+      var top2=300;
+    }else if(inputTop=="Black Olives"){
+      var top2=400;
+    }else if(inputTop=="Bacon"){
+      var top2=420;
+    }else if(inputTop=="Mushroom"){
+      var top2=450;
+    }else if(inputTop=="Extra Cheese"){
+      var top2=480;
+    }else if(inputTop=="Pepporoni"){
+      var top2=500;
+    }else if(inputTop=="Chicken"){
+      var top2=600;
+    }else if(inputTop=="Beef"){
+      var top2=650;
+    }
+
+    var inputTop = $("#newDiv3 input#pizza-top").val();
+    if (inputTop=="Onions"){
+      var top3=100;
+    }else if (inputTop=="Sausage"){
+      var top3=200;
+    }else if(inputTop=="Pineapple"){
+      var top3=250;
+    }else if(inputTop=="Green Pepper"){
+      var top3=300;
+    }else if(inputTop=="Black Olives"){
+      var top3=400;
+    }else if(inputTop=="Bacon"){
+      var top3=420;
+    }else if(inputTop=="Mushroom"){
+      var top3=450;
+    }else if(inputTop=="Extra Cheese"){
+      var top3=480;
+    }else if(inputTop=="Pepporoni"){
+      var top3=500;
+    }else if(inputTop=="Chicken"){
+      var top3=600;
+    }else if(inputTop=="Beef"){
+      var top3=650;
+    }
+
+    var inputTop = $("#newDiv4 input#pizza-top").val();
+    if (inputTop=="Onions"){
+      var top4=100;
+    }else if (inputTop=="Sausage"){
+      var top4=200;
+    }else if(inputTop=="Pineapple"){
+      var top4=250;
+    }else if(inputTop=="Green Pepper"){
+      var top4=300;
+    }else if(inputTop=="Black Olives"){
+      var top4=400;
+    }else if(inputTop=="Bacon"){
+      var top4=420;
+    }else if(inputTop=="Mushroom"){
+      var top4=450;
+    }else if(inputTop=="Extra Cheese"){
+      var top4=480;
+    }else if(inputTop=="Pepporoni"){
+      var top4=500;
+    }else if(inputTop=="Chicken"){
+      var top4=600;
+    }else if(inputTop=="Beef"){
+      var top4=650;
+    }
+    
+    var inputTop = $("#newDivTop1 input#pizza-top").val();
+    if (inputTop=="Onions"){
+      var ptop1=100;
+    }else if (inputTop=="Sausage"){
+      var ptop1=200;
+    }else if(inputTop=="Pineapple"){
+      var ptop1=250;
+    }else if(inputTop=="Green Pepper"){
+      var ptop1=300;
+    }else if(inputTop=="Black Olives"){
+      var ptop1=400;
+    }else if(inputTop=="Bacon"){
+      var ptop1=420;
+    }else if(inputTop=="Mushroom"){
+      var ptop1=450;
+    }else if(inputTop=="Extra Cheese"){
+      var ptop1=480;
+    }else if(inputTop=="Pepporoni"){
+      var ptop1=500;
+    }else if(inputTop=="Chicken"){
+      var ptop1=600;
+    }else if(inputTop=="Beef"){
+      var ptop1=650;
+    }
+    
+    var inputTop = $("#newDivTop2 input#pizza-top").val();
+    if (inputTop=="Onions"){
+      var ptop2=100;
+    }else if (inputTop=="Sausage"){
+      var ptop2=200;
+    }else if(inputTop=="Pineapple"){
+      var ptop2=250;
+    }else if(inputTop=="Green Pepper"){
+      var ptop2=300;
+    }else if(inputTop=="Black Olives"){
+      var ptop2=400;
+    }else if(inputTop=="Bacon"){
+      var ptop2=420;
+    }else if(inputTop=="Mushroom"){
+      var ptop2=450;
+    }else if(inputTop=="Extra Cheese"){
+      var ptop2=480;
+    }else if(inputTop=="Pepporoni"){
+      var ptop2=500;
+    }else if(inputTop=="Chicken"){
+      var ptop2=600;
+    }else if(inputTop=="Beef"){
+      var ptop2=650;
+    }
+
+    var inputTop = $("#newDivTop3 input#pizza-top").val();
+    if (inputTop=="Onions"){
+      var ptop3=100;
+    }else if (inputTop=="Sausage"){
+      var ptop3=200;
+    }else if(inputTop=="Pineapple"){
+      var ptop3=250;
+    }else if(inputTop=="Green Pepper"){
+      var ptop3=300;
+    }else if(inputTop=="Black Olives"){
+      var ptop3=400;
+    }else if(inputTop=="Bacon"){
+      var ptop3=420;
+    }else if(inputTop=="Mushroom"){
+      var ptop3=450;
+    }else if(inputTop=="Extra Cheese"){
+      var ptop3=480;
+    }else if(inputTop=="Pepporoni"){
+      var ptop3=500;
+    }else if(inputTop=="Chicken"){
+      var ptop3=600;
+    }else if(inputTop=="Beef"){
+      var ptop3=650;
+    }
+
+    var inputTop = $("#newDivTop4 input#pizza-top").val();
+    if (inputTop=="Onions"){
+      var ptop4=100;
+    }else if (inputTop=="Sausage"){
+      var ptop4=200;
+    }else if(inputTop=="Pineapple"){
+      var ptop4=250;
+    }else if(inputTop=="Green Pepper"){
+      var ptop4=300;
+    }else if(inputTop=="Black Olives"){
+      var ptop4=400;
+    }else if(inputTop=="Bacon"){
+      var ptop4=420;
+    }else if(inputTop=="Mushroom"){
+      var ptop4=450;
+    }else if(inputTop=="Extra Cheese"){
+      var ptop4=480;
+    }else if(inputTop=="Pepporoni"){
+      var ptop4=500;
+    }else if(inputTop=="Chicken"){
+      var ptop4=600;
+    }else if(inputTop=="Beef"){
+      var ptop4=650;
+    }
+
+    var inputTop = $("#newDivTop5 input#pizza-top").val();
+    if (inputTop=="Onions"){
+      var ptop5=100;
+    }else if (inputTop=="Sausage"){
+      var ptop5=200;
+    }else if(inputTop=="Pineapple"){
+      var ptop5=250;
+    }else if(inputTop=="Green Pepper"){
+      var ptop5=300;
+    }else if(inputTop=="Black Olives"){
+      var ptop5=400;
+    }else if(inputTop=="Bacon"){
+      var ptop5=420;
+    }else if(inputTop=="Mushroom"){
+      var ptop5=450;
+    }else if(inputTop=="Extra Cheese"){
+      var ptop5=480;
+    }else if(inputTop=="Pepporoni"){
+      var ptop5=500;
+    }else if(inputTop=="Chicken"){
+      var ptop5=600;
+    }else if(inputTop=="Beef"){
+      var ptop5=650;
+    }
+
+    $("form#order-form").submit(function(event) {
+      event.preventDefault();
+      var add=function(size0,size1,size2,size3,size4,crust0,crust1,crust2,crust3,crust4,top0,top1,top2,top3,top4,ptop1,ptop2,ptop3,ptop4,ptop5) {
+        return size0+size1+size2+size3+size4+crust0+crust1+crust2+crust3+crust4+top0+top1+top2+top3+top4+ptop1+ptop2+ptop3+ptop4+ptop5
+      }
+      
+    var result1 = add(size0,size1,size2,size3,size4,crust0,crust1,crust2,crust3,crust4,top0,top1,top2,top3,top4,ptop1,ptop2,ptop3,ptop4,ptop5);
+    alert(result1);
+    });
+  
+    // (size0+size1+size2+size3+size4+crust0+crust1+crust2+crust3+crust4+top0+top1+top2+top3+top4+ptop1+ptop2+ptop3+ptop4+ptop5);
+
+
+
 
     var placeNairobi = $("input#place-nairobi").val();
     var placeNakuru = $("input#place-nakuru").val();
