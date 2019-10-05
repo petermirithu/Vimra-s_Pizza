@@ -7,25 +7,26 @@
   background-size: cover;
 
 }
+.slideshowContainer{
+  margin: 0%;
+}
 .mySlides {display:none;}
 .mySlides{
 opacity: 0.9;
+float: right;
 }
 .welcome{
-  padding-top: 25%;
+  padding-top: 20%;
   text-align: center;  
   padding-bottom: 20%;
   color: gold;
 }
-.logo,.logo2{
-  
+.logo{  
   text-align: center;
   font-size: 90px;;
   color: wheat
 }
-.logo2{
-  opacity: 1;
-}
+
 .topnav {
   overflow: hidden;
   background-color: rgb(3, 1, 1);
@@ -50,6 +51,55 @@ opacity: 0.9;
 .topnav a.active {
   background-color: rgb(221, 10, 63);
   color: white;
+}
+
+#book{
+  background-image: url("../images/wal1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:rgb(2, 255, 23);
+  
+}
+#message {
+  padding-left: 15%;
+  padding-right: 15%;
+  color: white;
+  background-color: black;
+  opacity: 0.5;
+}
+.message {
+  width: 750px;
+  height: 200px;
+  border: 1px solid white;
+  background: transparent;
+}
+input[type="text"]
+{
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid white;
+    margin: 10px;
+}
+.name {
+  width: 45%;
+  color: gold
+}
+.email {
+  width: 45%;
+  color: gold;
+}
+
+::placeholder{
+  color: white;
+  text-align: left;
+}
+.message {
+  width: 500px;
+  height: 200px;
+  color: gold;
+}
+#send,#reset{
+  background-color: red;
+  color: gold;
 }
 
 @media screen and (max-width: 600px) {
