@@ -34,20 +34,20 @@ $(document).ready(function() {
   $("#add-topping").click(function() {
     var $newDivTop=$('<div class="form-group">'+
     '<label for="pizza-top">Pizza Topping:</label>'+
-    '<input type="p-top" list="p-top" class="form-control" id="pizza-top">'+
-    '<datalist id="p-top">'+
-        '<option value="Onions">@100/=</option>'+
-        '<option value="Sausage">@200/=</option>'+
-        '<option value="Pineapple">@250/=</option>'+
-        '<option value="Green Pepper">@300/=</option>'+
-        '<option value="Black Olives">@400/=</option>'+
-        '<option value="Bacon">@420/=</option>'+
-        '<option value="Mushroom">@450/=</option>'+
-        '<option value="Extra Cheese">@480/=</option>'+
-        '<option value="Pepporoni">@500/=</option>'+
-        '<option value="Chicken">@600/=</option>'+
-        '<option value="Beef">@650/=</option>'+
-    '</datalist>'+
+    '<select class="form-control" id="pizza-top">'+
+                '<option value="0">Select a Topping:</option>'+
+                '<option value="100">Onions @100/=</option>'+
+                '<option value="200">Sausage @200/=</option>'+
+                '<option value="250">Pineapple @250/=</option>'+
+                '<option value="300">Green Pepper @300/=</option>'+
+                '<option value="400">Black Olives @400/=</option>'+
+                '<option value="420">Bacon @420/=</option>'+
+                '<option value="450">Mushroom @450/=</option>'+
+                '<option value="480">Extra Cheese @480/=</option>'+
+                '<option value="500">Pepporoni @500/=</option>'+
+                '<option value="600">Chicken @600/=</option>'+
+                '<option value="650">Beef @650/=</option>'+
+            '</select>'+
     '<span class="btn btn-outline-primary" id="remove-top">Remove Topping</span>'+
   '</div>');
   $newDivTop.attr("id", "newDivTop" + counter2++);
@@ -57,20 +57,20 @@ $(document).ready(function() {
   $("#add-topping_x").click(function() {
     var $newDivTop=$('<div class="form-group">'+
     '<label for="pizza-top">Pizza Topping:</label>'+
-    '<input type="p-top" list="p-top" class="form-control" id="pizza-top">'+
-    '<datalist id="p-top">'+
-        '<option value="Onions">@100/=</option>'+
-        '<option value="Sausage">@200/=</option>'+
-        '<option value="Pineapple">@250/=</option>'+
-        '<option value="Green Pepper">@300/=</option>'+
-        '<option value="Black Olives">@400/=</option>'+
-        '<option value="Bacon">@420/=</option>'+
-        '<option value="Mushroom">@450/=</option>'+
-        '<option value="Extra Cheese">@480/=</option>'+
-        '<option value="Pepporoni">@500/=</option>'+
-        '<option value="Chicken">@600/=</option>'+
-        '<option value="Beef">@650/=</option>'+
-    '</datalist>'+
+    '<select class="form-control" id="pizza-top">'+
+                '<option value="0">Select a Topping:</option>'+
+                '<option value="100">Onions @100/=</option>'+
+                '<option value="200">Sausage @200/=</option>'+
+                '<option value="250">Pineapple @250/=</option>'+
+                '<option value="300">Green Pepper @300/=</option>'+
+                '<option value="400">Black Olives @400/=</option>'+
+                '<option value="420">Bacon @420/=</option>'+
+                '<option value="450">Mushroom @450/=</option>'+
+                '<option value="480">Extra Cheese @480/=</option>'+
+                '<option value="500">Pepporoni @500/=</option>'+
+                '<option value="600">Chicken @600/=</option>'+
+                '<option value="650">Beef @650/=</option>'+
+            '</select>'+
     '<span class="btn btn-outline-primary" id="remove-top">Remove Topping</span>'+
   '</div>');
   $newDivTop.attr("id", "newDivTop_x" + counter2++);
@@ -80,48 +80,48 @@ $(document).ready(function() {
   $("#another-pizza").click(function() {
     var $newDiv = $('<div class="form-group">'+
     '<label for="pizza-size">Pizza Size:</label>'+
-    '<input list="p-size" type="p-size" id="pizza-size" class="form-control">'+
-    '<datalist id="p-size">'+
-      '<option value="Small">@100/=</option>'+
-      '<option value="Medium">@200/=</option>'+
-      '<option value="Large">@300/=</option>'+
-    '</datalist>'+
+    '<select id="pizza-size" class="form-control">'+
+            '<option value="0">Select a Size:</option>'+
+            '<option value="100">Small @100/=</option>'+
+            '<option value="200">Medium @200/=</option>'+
+            '<option value="300">Large @300/=</option>'+
+          '</select>'+
   '</div>'+
   '<div class="form-group">'+
     '<label for="pizza-crust">Pizza Crust:</label>'+
-    '<input type="p-crust" list="p-crust" class="form-control" id="pizza-crust">'+
-    '<datalist id="p-crust">'+
-      '<option value="Crispy crust">@400/=</option>'+
-      '<option value="Cracker Crust">@420/=</option>'+
-      '<option value="Pizza Bagels">@450/=</option>'+
-      '<option value="Detroit Crust">@500/=</option>'+
-      '<option value="Sicilian Style">@550/=</option>'+
-      '<option value="Flat-bread Crust">@580/=</option>'+
-      '<option value="Chicago Deep Dish">@650/=</option>'+
-      '<option value="Pretzel Crust">@700/=</option>'+
-      '<option value="Neopolitan Crust">@700/=</option>'+
-      '<option value="NYC-Style crust">@750/=</option>'+
-      '<option value="Stuffed Dough">@750/=</option>'+
-      '<option value="Focaccia">@800/=</option>'+
-    '</datalist>'+
+    '<select id="pizza-crust" class="form-control">'+
+            '<option value="0">Select a Crust:</option>'+
+            '<option value="400">Crispy crust @400/=</option>'+
+            '<option value="420">Cracker Crust @420/=</option>'+
+            '<option value="450">Pizza Bagels @450/=</option>'+
+            '<option value="500">Detroit Crust @500/=</option>'+
+            '<option value="550">Sicilian Style @550/=</option>'+
+            '<option value="580">Flat-bread Crust @580/=</option>'+
+            '<option value="650">Chicago Deep Dish @650/=</option>'+
+            '<option value="700">Pretzel Crust @700/=</option>'+
+            '<option value="720">Neopolitan Crust @720/=</option>'+
+            '<option value="750">NYC-Style Crust @750/=</option>'+
+            '<option value="780">Stuffed Dough @780/=</option>'+
+            '<option value="800">Focaccia @800/=</option>'+
+          '</select>'+
   '</div>'+
   '<div id="add-top">'+
     '<div class="form-group">'+
       '<label for="pizza-top">Pizza Topping:</label>'+
-      '<input type="p-top" list="p-top" class="form-control" id="pizza-top">'+
-      '<datalist id="p-top">'+
-          '<option value="Onions">@100/=</option>'+
-          '<option value="Sausage">@200/=</option>'+
-          '<option value="Pineapple">@250/=</option>'+
-          '<option value="Green Pepper">@300/=</option>'+
-          '<option value="Black Olives">@400/=</option>'+
-          '<option value="Bacon">@420/=</option>'+
-          '<option value="Mushroom">@450/=</option>'+
-          '<option value="Extra Cheese">@480/=</option>'+
-          '<option value="Pepporoni">@500/=</option>'+
-          '<option value="Chicken">@600/=</option>'+
-          '<option value="Beef">@650/=</option>'+
-      '</datalist>'+
+      '<select class="form-control" id="pizza-top">'+
+                '<option value="0">Select a Topping:</option>'+
+                '<option value="100">Onions @100/=</option>'+
+                '<option value="200">Sausage @200/=</option>'+
+                '<option value="250">Pineapple @250/=</option>'+
+                '<option value="300">Green Pepper @300/=</option>'+
+                '<option value="400">Black Olives @400/=</option>'+
+                '<option value="420">Bacon @420/=</option>'+
+                '<option value="450">Mushroom @450/=</option>'+
+                '<option value="480">Extra Cheese @480/=</option>'+
+                '<option value="500">Pepporoni @500/=</option>'+
+                '<option value="600">Chicken @600/=</option>'+
+                '<option value="650">Beef @650/=</option>'+
+            '</select>'+
       '<span class="btn btn-outline-primary" id="add-topping_x">Add Topping</span>'+
       '<span class="btn btn-outline-primary" id="remove-top">Remove Topping</span>'+
     '</div>'+
@@ -647,6 +647,12 @@ $(document).ready(function() {
     var commentName=$("input.name").val();
     var commentEmail=$("input.email").val();
     var commentText=$("textarea.message").val();
-    alert(commentName+", Your message has been delivered."+"Thank you for visiting us");
+    var car1=parseInt(document.getElementById("car1").value);
+    var car2=parseInt(document.getElementById("car2").value);
+    var car3=parseInt(document.getElementById("car3").value);
+    
+    var res= car1+car2+car3
+    alert(res)
+    // alert(commentName+", Your message has been delivered."+"Thank you for visiting us");
   });
 });

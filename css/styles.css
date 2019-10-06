@@ -74,6 +74,22 @@ label{
   background: transparent;
   color: rgb(233, 21, 5);
 }
+#deliver-to-place{
+  background-image: url("../images/bg2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#order-details{
+  background-image: url("../images/bg3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: gold;
+}
+
+#place-nairobi,#place-nakuru,#place-mombasa{
+  background: transparent;
+  color: gold;
+}
 #book{
   background-image: url("../images/wal1.jpg");
   background-repeat: no-repeat;
