@@ -53,13 +53,27 @@ float: right;
   color: white;
 }
 .user-details{
-  background-image: url("../images/11007104.webp");
+  background-image: url("../images/food-pizza-baking.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  color: grey;
+  color: rgb(236, 194, 4);
 
 }
-
+#names,#email,#telephone{
+  color: rgb(221, 5, 5);
+}
+#new-orders{
+  background-image: url("../images/wine.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+label{
+  color:gold;
+}
+#pizza-size, #pizza-crust, #pizza-top{
+  background: transparent;
+  color: rgb(233, 21, 5);
+}
 #book{
   background-image: url("../images/wal1.jpg");
   background-repeat: no-repeat;
