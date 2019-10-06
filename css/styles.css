@@ -1,3 +1,7 @@
+body{
+  font-family: 'Permanent Marker', cursive;
+font-family: 'Merienda', cursive;
+}
 .btn {
  cursor: pointer;
 }
@@ -7,10 +11,13 @@
   background-size: cover;
 
 }
+
+
 .slideshowContainer{
   margin: 0%;
 }
 .mySlides {display:none;}
+
 .mySlides{
 opacity: 0.9;
 float: right;
@@ -25,17 +32,18 @@ h3{
   color:  black;
   background-color: green
 }
-.summary{
+#summary{
   background-image: url("../images/order2.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   color: gold;
 }
 .welcome{
-  padding-top: 20%;
+  padding-top: 30%;
   text-align: center;  
-  padding-bottom: 20%;
-  color: gold;
+  padding-bottom: 10%;
+  color: white;
+  font-family: 'Permanent Marker', cursive;
 }
 .logo{  
   text-align: center;

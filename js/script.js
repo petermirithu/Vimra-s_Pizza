@@ -234,6 +234,8 @@ $(document).ready(function() {
     
     $(".grand-total").html(grandTotal);
     
+    alert(inputpersonName+" : Your Order has been received.Thanks for shopping with us.")
+    alert("Your total cost is "+ grandTotal+". See the Summary below.")
   });
   
   $("form#message").submit(function (event) {
