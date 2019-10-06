@@ -30,6 +30,16 @@ var counter2=1;
 
 
 $(document).ready(function() {
+  $(function() {
+    $('#order-form').change(function(){
+      var str = "Name: " + $( "input#names" ).val() + "<br>Email: " + $( "input#email" ).val() +"<br>Telephone N.O: " + $( "input#telephone").val()+
+      "<br>Sizes you chose: "+$( "select#pizza-size option:selected" ).text()+
+      "<br>Crusts you chose: "+$( "select#pizza-crust option:selected" ).text()+
+      "<br>Tops you chose: "+$( "select#pizza-top option:selected" ).text()+
+      "<br>Place of Delivery: "+$( "select#place-nairobi option:selected" ).text();
+      $("#results").html(str);
+    });
+  });
 
   $("#add-topping").click(function() {
     var $newDivTop=$('<div class="form-group">'+
@@ -127,6 +137,7 @@ $(document).ready(function() {
       var size3=parseInt($('#newDiv3 #pizza-size').find('option:selected').val());
       var size4=parseInt($('#newDiv4 #pizza-size').find('option:selected').val());
           
+      
       if (isNaN(size1)) size1=0;
       if (isNaN(size2)) size2=0;
       if (isNaN(size3)) size3=0;
@@ -219,10 +230,12 @@ $(document).ready(function() {
     var placeNairobi = parseInt($('#place-nairobi').find('option:selected').val());
     if (isNaN(placeNairobi)) placeNairobi=0;
     
+    
     var grandTotal=totalSize+totalCrust+totalTopsOrder1+totalTopsOrder2+totalTopsOrder3+totalTopsOrder4+totalTopsOrder5+placeNairobi
-    alert(grandTotal)
+    
     
   });
+  
   $("form#message").submit(function (event) {
     event.preventDefault();
     var commentName=$("input.name").val();

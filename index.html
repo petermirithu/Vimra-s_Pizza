@@ -59,20 +59,20 @@
   
   <div class="container-fluid">
     <h1>VIMRA's PIZZA.</h1>
-    <form id="order-form">
+    <form id="order-form" action="/action_page.php">
       <h2>Customer Details.</h2>
       <div class="user-details">
         <div class="form-group">
           <label for="names">Name:</label>
-          <input type="text" class="form-control" id="names">
+          <input type="text" class="form-control" id="names" val="">
         </div>
         <div class="form-group">
           <label for="email">Email:</label>
-          <input type="text" class="form-control" id="email">
+          <input type="text" class="form-control" id="email" val="">
         </div>
         <div class="form-group">
           <label for="telephone">Telephone N.o :</label>
-          <input type="text" class="form-control" id="telephone">
+          <input type="text" class="form-control" id="telephone" val="">
         </div>
       </div>
 
@@ -126,7 +126,9 @@
 
       <div class="form-group">
         <label for="results">Total Prize for the pizza:</label>
-        <div id="results">Result</div>
+        <div id="results">Result
+
+        </div>
 
       <div class="form-group">
         <label for="deliver">Do you want your Pizza delivered ?</label>
@@ -141,7 +143,7 @@
     </form>
     <br>
 
-
+<!-- 
     <h3>Order By:</h3>
     <ul id="order-by">
 
@@ -160,7 +162,7 @@
       <p>Pizza Toppings:</p>
       <ol id=display-toppings>
 
-      </ol>
+      </ol> -->
       <p>Delivery Place: <span class="delivery-place"></span></p>
       <p>Grand Total Prize of your order is: <span class="grand-total"></span></p>
     </div>
