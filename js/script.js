@@ -36,7 +36,7 @@ $(document).ready(function() {
       "<br>Sizes you chose: "+$( "select#pizza-size option:selected" ).text()+
       "<br>Crusts you chose: "+$( "select#pizza-crust option:selected" ).text()+
       "<br>Tops you chose: "+$( "select#pizza-top option:selected" ).text()+
-      "<br>Place of Delivery: "+$( "select#place-nairobi option:selected" ).text();
+      "<br>Place of Delivery: "+$( "select#place-nairobi option:selected" ).text();      
       $("#results").html(str);
     });
   });
@@ -229,10 +229,10 @@ $(document).ready(function() {
 
     var placeNairobi = parseInt($('#place-nairobi').find('option:selected').val());
     if (isNaN(placeNairobi)) placeNairobi=0;
-    
-    
+      
     var grandTotal=totalSize+totalCrust+totalTopsOrder1+totalTopsOrder2+totalTopsOrder3+totalTopsOrder4+totalTopsOrder5+placeNairobi
     
+    $(".grand-total").html(grandTotal);
     
   });
   
