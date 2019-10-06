@@ -41,30 +41,12 @@ $(document).ready(function() {
                 '<option value="480">Extra Cheese @480/=</option>'+
                 '<option value="500">Pepporoni @500/=</option>'+
                 '<option value="600">Chicken @600/=</option>'+                
-            '</select>'+
-    '<span class="btn btn-outline-primary" id="remove-top">Remove Topping</span>'+
+            '</select>'+      
   '</div>');
   $newDivTop.attr("id", "newDivTop" + counter2++);
-  $("#add-top").append($newDivTop);
+  $(".add-top").append($newDivTop);
   });
-
-  $("#add-topping_x").click(function() {
-    var $newDivTop=$('<div class="form-group">'+
-    '<label for="pizza-top">Pizza Topping:</label>'+
-    '<select class="form-control" id="pizza-top">'+
-                '<option value="0">Select a Topping:</option>'+                
-                '<option value="300">Green Pepper @300/=</option>'+                
-                '<option value="420">Bacon @420/=</option>'+                
-                '<option value="480">Extra Cheese @480/=</option>'+
-                '<option value="500">Pepporoni @500/=</option>'+
-                '<option value="600">Chicken @600/=</option>'+                
-            '</select>'+
-    '<span class="btn btn-outline-primary" id="remove-top">Remove Topping</span>'+
-  '</div>');
-  $newDivTop.attr("id", "newDivTop_x" + counter2++);
-  $("newDiv1").append($newDivTop);
-  });
-
+    
   $("#another-pizza").click(function() {
     var $newDiv = $('<div class="form-group">'+
     '<label for="pizza-size">Pizza Size:</label>'+
@@ -93,7 +75,7 @@ $(document).ready(function() {
             '<option value="800">Focaccia @800/=</option>'+
           '</select>'+
   '</div>'+
-  '<div id="add-top">'+
+  '<div class="add-top">'+
     '<div class="form-group">'+
       '<label for="pizza-top">Pizza Topping:</label>'+
       '<select class="form-control" id="pizza-top">'+
@@ -103,10 +85,8 @@ $(document).ready(function() {
                 '<option value="480">Extra Cheese @480/=</option>'+
                 '<option value="500">Pepporoni @500/=</option>'+
                 '<option value="600">Chicken @600/=</option>'+                
-            '</select>'+
-      '<span class="btn btn-outline-primary" id="add-topping_x">Add Topping</span>'+
-      '<span class="btn btn-outline-primary" id="remove-top">Remove Topping</span>'+
-    '</div>'+
+            '</select>'+                  
+    '</div>'+    
   '</div>');
   $newDiv.attr("id", "newDiv" + counter++);
   $("#new-orders").append($newDiv);
@@ -116,42 +96,21 @@ $(document).ready(function() {
   $("#deliver-yes").click(function() {
     $("#deliver-to-place").append('<h3>Only select one county and place</h3>'+
     '<div class="nairobi">'+
-    '<label for="place-nairobi">Nairobi</label>'+
-    '<input type="naiorbi" list="nairobi" id="place-nairobi" class="form-control">'+
-    '<datalist id="nairobi">'+
-      '<option value="KFC Kimathi Street">@50/=</option>'+
-      '<option value="Serena Hotel">@50/=</option>'+
-      '<option value="Yaya Centre">@100/=</option>'+
-      '<option value="Subway Hotel">@200/=</option>'+
-      '<option value="Java Hurlingham Plaza">@100/=</option>'+
-      '<option value="Embakasi Mall">@200/=</option>'+
-      '<option value="Sarit Centre">@200/=</option>'+
-      '<option value="Lavington Mall">@250/=</option>'+
-    '</datalist>'+
-    '</div>'+
-    '<div class="nakuru">'+
-        '<label for="place-nakuru">Nakuru</label>'+
-        '<input type="nakuru" list="nakuru" id="place-nakuru" class="form-control">'+
-        '<datalist id="nakuru">'+
-          '<option value="Biashara Centre">@50/=</option>'+
-          '<option value="Sokini Plaza">@50/=</option>'+
-          '<option value="WestSide mall">@50/=</option>'+
-          '<option value="Serena Hotel">@100/=</option>'+
-          '<option value="Section 58">@100/=</option>'+
-        '</datalist>'+
-    '</div>'+
-    '<div class="mombasa">'+
-        '<label for="place-mombasa">Mombasa</label>'+
-        '<input type="mombasa" list="mombasa" id="place-mombasa" class="form-control">'+
-        '<datalist id="mombasa">'+
-          '<option value="Nyali Mall">@50/=</option>'+
-          '<option value="Fort Jesus">@100/=</option>'+
-          '<option value="Mei Place Apartment">@100/=</option>'+
-          '<option value="Wild Water park">@100/=</option>'+
-          '<option value="Sarova WhiteSands Beach Resort">@200/=</option>'+
-          '<option value="Voyage Beach Hotel">@200/=</option>'+
-        '</datalist>'+
+    '<label for="place-nairobi">Nairobi</label>'+     
+    '<select id="place-nairobi" class="form-control">'+
+      '<option value="0">Choose the place of delivery:</option>'+
+      '<option value="50">KFC Kimathi Street @50/=</option>'+
+      '<option value="50">Serena Hotel @50/=</option>'+
+      '<option value="100">Yaya Centre @100/=</option>'+
+      '<option value="200">Subway Hotel @200/=</option>'+
+      '<option value="200">Java Hurlingham Plaza @200/=</option>'+
+      '<option value="200">Embakasi Mall @200/=</option>'+
+      '<option value="200">Sarit Centre @200/=</option>'+
+      '<option value="250">Lavington Mall @250/=</option>'+
+    '</select>'+
     '</div>');
+    
+  
   });
 
   $("form#order-form").submit(function (event) {
@@ -161,9 +120,7 @@ $(document).ready(function() {
     var inputpersonTelephone = $("input#telephone").val();
    
     var newOrder = new Order(inputpersonName, inputpersonEmail, inputpersonTelephone)
-
-    $("form#order-form").submit(function(event) {
-      event.preventDefault();      
+      
       var size =parseInt($('#pizza-size').find('option:selected').val());   
       var size1=parseInt($('#newDiv1 #pizza-size').find('option:selected').val());
       var size2=parseInt($('#newDiv2 #pizza-size').find('option:selected').val());
@@ -176,7 +133,7 @@ $(document).ready(function() {
       if (isNaN(size4)) size4=0;      
 
       var totalSize = size+size1+size2+size3+size4
-    });
+    
   
     var crust =parseInt($('#pizza-crust').find('option:selected').val());   
       var crust1=parseInt($('#newDiv1 #pizza-crust').find('option:selected').val());
@@ -259,10 +216,12 @@ $(document).ready(function() {
       var totalTopsOrder4=topOrder4+top1Order4+top2Order4+top3Order4+top4Order4
       var totalTopsOrder5=topOrder5+top1Order5+top2Order5+top3Order5+top4Order5
 
-    var placeNairobi = $("input#place-nairobi").val();
-    var placeNakuru = $("input#place-nakuru").val();
-    var placeMombasa = $("input#place-mombasa").val();
-  
+    var placeNairobi = parseInt($('#place-nairobi').find('option:selected').val());
+    if (isNaN(placeNairobi)) placeNairobi=0;
+    
+    var grandTotal=totalSize+totalCrust+totalTopsOrder1+totalTopsOrder2+totalTopsOrder3+totalTopsOrder4+totalTopsOrder5+placeNairobi
+    alert(grandTotal)
+    
   });
   $("form#message").submit(function (event) {
     event.preventDefault();

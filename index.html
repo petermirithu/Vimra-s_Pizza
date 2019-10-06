@@ -105,7 +105,7 @@
             <option value="800">Focaccia @800/=</option>
           </select>
         </div>
-        <div id="add-top">
+        <div class="add-top">
           <div class="form-group">
             <label for="pizza-top">Pizza Topping:</label>             
             <select class="form-control" id="pizza-top">
@@ -115,14 +115,13 @@
                 <option value="480">Extra Cheese @480/=</option>
                 <option value="500">Pepporoni @500/=</option>
                 <option value="600">Chicken @600/=</option>                
-            </select>
-            <span class="btn btn-outline-primary" id="add-topping">Add Topping</span>
-            <span class="btn btn-outline-primary" id="remove-top">Remove Topping</span>
+            </select>                        
           </div>
         </div>
       </div>
       
-
+      <span class="btn btn-outline-primary" id="add-topping">Add Topping</span>
+      <button class="btn btn-outline-primary" type="reset">Clear</button>
       <span class="btn btn-primary" id="another-pizza">Order another Pizza</span>
 
       <div class="form-group">
@@ -199,7 +198,8 @@
         <form id="message">
             <input type="text" value="" class="name" placeholder="Name...">
             <input type="text" value="" class="email" placeholder="Email..."> <br>
-            <textarea type="" value="" class="message" placeholder="Your message here..."></textarea><br>                        
+            <textarea type="" value="" class="message" placeholder="Your message here..."></textarea><br>                                    
+
             <button  type="submit" id="send">Send Message</button>  
             <button type="reset" id="reset">Reset</button>
       </div>
