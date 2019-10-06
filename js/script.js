@@ -119,8 +119,10 @@ $(document).ready(function() {
       '<option value="250">Lavington Mall @250/=</option>'+
     '</select>'+
     '</div>');
-    
+  });
   
+    $("#deliver-no").click(function() {
+      alert("Pick your Order at Our Company");
   });
 
   $("form#order-form").submit(function (event) {
@@ -128,9 +130,7 @@ $(document).ready(function() {
     var inputpersonName = $("input#names").val();
     var inputpersonEmail = $("input#email").val();
     var inputpersonTelephone = $("input#telephone").val();
-   
-    var newOrder = new Order(inputpersonName, inputpersonEmail, inputpersonTelephone)
-      
+     
       var size =parseInt($('#pizza-size').find('option:selected').val());   
       var size1=parseInt($('#newDiv1 #pizza-size').find('option:selected').val());
       var size2=parseInt($('#newDiv2 #pizza-size').find('option:selected').val());
