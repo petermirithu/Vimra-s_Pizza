@@ -642,4 +642,11 @@ $(document).ready(function() {
     var placeMombasa = $("input#place-mombasa").val();
   
   });
+  $("form#message").submit(function (event) {
+    event.preventDefault();
+    var commentName=$("input.name").val();
+    var commentEmail=$("input.email").val();
+    var commentText=$("textarea.message").val();
+    alert(commentName+", Your message has been delivered."+"Thank you for visiting us");
+  });
 });

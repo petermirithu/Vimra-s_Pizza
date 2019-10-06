@@ -52,6 +52,13 @@ float: right;
   background-color: rgb(221, 10, 63);
   color: white;
 }
+.user-details{
+  background-image: url("../images/11007104.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: grey;
+
+}
 
 #book{
   background-image: url("../images/wal1.jpg");
@@ -60,12 +67,14 @@ float: right;
   color:rgb(2, 255, 23);
   
 }
+.bgcolor3{
+  background-color: black;
+  opacity: 0.6;
+}
 #message {
   padding-left: 15%;
   padding-right: 15%;
-  color: white;
-  background-color: black;
-  opacity: 0.5;
+  color: white;    
 }
 .message {
   width: 750px;
@@ -100,6 +109,14 @@ input[type="text"]
 #send,#reset{
   background-color: red;
   color: gold;
+}
+.social {
+  text-align: center;
+  padding-top: 20px;
+  cursor: pointer;
+}
+h6{
+  font-size: 20px;
 }
 
 @media screen and (max-width: 600px) {
