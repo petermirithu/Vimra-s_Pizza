@@ -5,13 +5,19 @@ font-family: 'Merienda', cursive;
 .btn {
  cursor: pointer;
 }
+#myTopnav{
+  overflow: hidden;
+  position: fixed; 
+  top: 0; 
+  width: 100%;
+  z-index: 1;
+}
 .bghome{
   background-image: url("../images/home1.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
 
 }
-
 
 .slideshowContainer{
   margin: 0%;
@@ -45,7 +51,7 @@ h3{
   color: white;
   font-family: 'Permanent Marker', cursive;
 }
-.logo{  
+#logo{  
   text-align: center;
   font-size: 90px;;
   color: wheat
