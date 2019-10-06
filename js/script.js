@@ -36,17 +36,11 @@ $(document).ready(function() {
     '<label for="pizza-top">Pizza Topping:</label>'+
     '<select class="form-control" id="pizza-top">'+
                 '<option value="0">Select a Topping:</option>'+
-                '<option value="100">Onions @100/=</option>'+
-                '<option value="200">Sausage @200/=</option>'+
-                '<option value="250">Pineapple @250/=</option>'+
-                '<option value="300">Green Pepper @300/=</option>'+
-                '<option value="400">Black Olives @400/=</option>'+
-                '<option value="420">Bacon @420/=</option>'+
-                '<option value="450">Mushroom @450/=</option>'+
+                '<option value="300">Green Pepper @300/=</option>'+                
+                '<option value="420">Bacon @420/=</option>'+                
                 '<option value="480">Extra Cheese @480/=</option>'+
                 '<option value="500">Pepporoni @500/=</option>'+
-                '<option value="600">Chicken @600/=</option>'+
-                '<option value="650">Beef @650/=</option>'+
+                '<option value="600">Chicken @600/=</option>'+                
             '</select>'+
     '<span class="btn btn-outline-primary" id="remove-top">Remove Topping</span>'+
   '</div>');
@@ -58,18 +52,12 @@ $(document).ready(function() {
     var $newDivTop=$('<div class="form-group">'+
     '<label for="pizza-top">Pizza Topping:</label>'+
     '<select class="form-control" id="pizza-top">'+
-                '<option value="0">Select a Topping:</option>'+
-                '<option value="100">Onions @100/=</option>'+
-                '<option value="200">Sausage @200/=</option>'+
-                '<option value="250">Pineapple @250/=</option>'+
-                '<option value="300">Green Pepper @300/=</option>'+
-                '<option value="400">Black Olives @400/=</option>'+
-                '<option value="420">Bacon @420/=</option>'+
-                '<option value="450">Mushroom @450/=</option>'+
+                '<option value="0">Select a Topping:</option>'+                
+                '<option value="300">Green Pepper @300/=</option>'+                
+                '<option value="420">Bacon @420/=</option>'+                
                 '<option value="480">Extra Cheese @480/=</option>'+
                 '<option value="500">Pepporoni @500/=</option>'+
-                '<option value="600">Chicken @600/=</option>'+
-                '<option value="650">Beef @650/=</option>'+
+                '<option value="600">Chicken @600/=</option>'+                
             '</select>'+
     '<span class="btn btn-outline-primary" id="remove-top">Remove Topping</span>'+
   '</div>');
@@ -110,17 +98,11 @@ $(document).ready(function() {
       '<label for="pizza-top">Pizza Topping:</label>'+
       '<select class="form-control" id="pizza-top">'+
                 '<option value="0">Select a Topping:</option>'+
-                '<option value="100">Onions @100/=</option>'+
-                '<option value="200">Sausage @200/=</option>'+
-                '<option value="250">Pineapple @250/=</option>'+
-                '<option value="300">Green Pepper @300/=</option>'+
-                '<option value="400">Black Olives @400/=</option>'+
-                '<option value="420">Bacon @420/=</option>'+
-                '<option value="450">Mushroom @450/=</option>'+
+                '<option value="300">Green Pepper @300/=</option>'+                
+                '<option value="420">Bacon @420/=</option>'+                
                 '<option value="480">Extra Cheese @480/=</option>'+
                 '<option value="500">Pepporoni @500/=</option>'+
-                '<option value="600">Chicken @600/=</option>'+
-                '<option value="650">Beef @650/=</option>'+
+                '<option value="600">Chicken @600/=</option>'+                
             '</select>'+
       '<span class="btn btn-outline-primary" id="add-topping_x">Add Topping</span>'+
       '<span class="btn btn-outline-primary" id="remove-top">Remove Topping</span>'+
@@ -187,23 +169,13 @@ $(document).ready(function() {
       var size2=parseInt($('#newDiv2 #pizza-size').find('option:selected').val());
       var size3=parseInt($('#newDiv3 #pizza-size').find('option:selected').val());
       var size4=parseInt($('#newDiv4 #pizza-size').find('option:selected').val());
-      var size5=parseInt($('#newDiv5 #pizza-size').find('option:selected').val());
-      var size6=parseInt($('#newDiv6 #pizza-size').find('option:selected').val());
-      var size7=parseInt($('#newDiv7 #pizza-size').find('option:selected').val());
-      var size8=parseInt($('#newDiv8 #pizza-size').find('option:selected').val());
-      var size9=parseInt($('#newDiv9 #pizza-size').find('option:selected').val());
-      
+          
       if (isNaN(size1)) size1=0;
       if (isNaN(size2)) size2=0;
       if (isNaN(size3)) size3=0;
-      if (isNaN(size4)) size4=0;
-      if (isNaN(size5)) size5=0;
-      if (isNaN(size6)) size6=0;
-      if (isNaN(size7)) size7=0;
-      if (isNaN(size8)) size8=0;
-      if (isNaN(size9)) size9=0;
+      if (isNaN(size4)) size4=0;      
 
-      var totalSize = size+size1+size2+size3+size4+size5+size6+size7+size8+size9      
+      var totalSize = size+size1+size2+size3+size4
     });
   
     var crust =parseInt($('#pizza-crust').find('option:selected').val());   
@@ -211,26 +183,81 @@ $(document).ready(function() {
       var crust2=parseInt($('#newDiv2 #pizza-crust').find('option:selected').val());
       var crust3=parseInt($('#newDiv3 #pizza-crust').find('option:selected').val());
       var crust4=parseInt($('#newDiv4 #pizza-crust').find('option:selected').val());
-      var crust5=parseInt($('#newDiv5 #pizza-crust').find('option:selected').val());
-      var crust6=parseInt($('#newDiv6 #pizza-crust').find('option:selected').val());
-      var crust7=parseInt($('#newDiv7 #pizza-crust').find('option:selected').val());
-      var crust8=parseInt($('#newDiv8 #pizza-crust').find('option:selected').val());
-      var crust9=parseInt($('#newDiv9 #pizza-crust').find('option:selected').val());
-      
+            
       if (isNaN(crust1)) crust1=0;
       if (isNaN(crust2)) crust2=0;
       if (isNaN(crust3)) crust3=0;
       if (isNaN(crust4)) crust4=0;
-      if (isNaN(crust5)) crust5=0;
-      if (isNaN(crust6)) crust6=0;
-      if (isNaN(crust7)) crust7=0;
-      if (isNaN(crust8)) crust8=0;
-      if (isNaN(crust9)) crust9=0;
 
-      var totalCrust = crust+crust1+crust2+crust3+crust4+crust5+crust6+crust7+crust8+crust9
+      var totalCrust = crust+crust1+crust2+crust3+crust4
     
+//first order
+      var topOrder1=parseInt($('#pizza-top').find('option:selected').val());
+      var top1Order1=parseInt($('#newDivTop1 #pizza-top').find('option:selected').val());
+      var top2Order1=parseInt($('#newDivTop2 #pizza-top').find('option:selected').val());
+      var top3Order1=parseInt($('#newDivTop3 #pizza-top').find('option:selected').val());
+      var top4Order1=parseInt($('#newDivTop4 #pizza-top').find('option:selected').val());
+      if (isNaN(topOrder1)) topOrder1=0;
+      if (isNaN(top1Order1)) top1Order1=0;
+      if (isNaN(top2Order1)) top2Order1=0;
+      if (isNaN(top3Order1)) top3Order1=0;
+      if (isNaN(top4Order1)) top4Order1=0;
 
+//second order
+      var topOrder2=parseInt($('#newDiv1 #pizza-top').find('option:selected').val());
+      var top1Order2=parseInt($('#newDiv1 #newDivTop1 #pizza-top').find('option:selected').val());
+      var top2Order2=parseInt($('#newDiv1 #newDivTop2 #pizza-top').find('option:selected').val());
+      var top3Order2=parseInt($('#newDiv1 #newDivTop3 #pizza-top').find('option:selected').val());
+      var top4Order2=parseInt($('#newDiv1 #newDivTop4 #pizza-top').find('option:selected').val());
+      if (isNaN(topOrder2)) topOrder2=0;
+      if (isNaN(top1Order2)) top1Order2=0;
+      if (isNaN(top2Order2)) top2Order2=0;
+      if (isNaN(top3Order2)) top3Order2=0;
+      if (isNaN(top4Order2)) top4Order2=0;
 
+//third order      
+      var topOrder3=parseInt($('#newDiv2 #pizza-top').find('option:selected').val());
+      var top1Order3=parseInt($('#newDiv2 #newDivTop1 #pizza-top').find('option:selected').val());
+      var top2Order3=parseInt($('#newDiv2 #newDivTop2 #pizza-top').find('option:selected').val());
+      var top3Order3=parseInt($('#newDiv2 #newDivTop3 #pizza-top').find('option:selected').val());
+      var top4Order3=parseInt($('#newDiv2 #newDivTop4 #pizza-top').find('option:selected').val());
+      if (isNaN(topOrder3)) topOrder3=0;
+      if (isNaN(top1Order3)) top1Order3=0;
+      if (isNaN(top2Order3)) top2Order3=0;
+      if (isNaN(top3Order3)) top3Order3=0;
+      if (isNaN(top4Order3)) top4Order3=0;
+
+//forth order    
+      var topOrder4=parseInt($('#newDiv3 #pizza-top').find('option:selected').val());
+      var top1Order4=parseInt($('#newDiv3 #newDivTop1 #pizza-top').find('option:selected').val());
+      var top2Order4=parseInt($('#newDiv3 #newDivTop2 #pizza-top').find('option:selected').val());
+      var top3Order4=parseInt($('#newDiv3 #newDivTop3 #pizza-top').find('option:selected').val());
+      var top4Order4=parseInt($('#newDiv3 #newDivTop4 #pizza-top').find('option:selected').val());
+      if (isNaN(topOrder4)) topOrder4=0;
+      if (isNaN(top1Order4)) top1Order4=0;
+      if (isNaN(top2Order4)) top2Order4=0;
+      if (isNaN(top3Order4)) top3Order4=0;
+      if (isNaN(top4Order4)) top4Order4=0;
+
+//fifth order
+      var topOrder5=parseInt($('#newDiv4 #pizza-top').find('option:selected').val());
+      var top1Order5=parseInt($('#newDiv4 #newDivTop1 #pizza-top').find('option:selected').val());
+      var top2Order5=parseInt($('#newDiv4 #newDivTop2 #pizza-top').find('option:selected').val());
+      var top3Order5=parseInt($('#newDiv4 #newDivTop3 #pizza-top').find('option:selected').val());
+      var top4Order5=parseInt($('#newDiv4 #newDivTop4 #pizza-top').find('option:selected').val());      
+
+      if (isNaN(topOrder5)) topOrder5=0;
+      if (isNaN(top1Order5)) top1Order5=0;
+      if (isNaN(top2Order5)) top2Order5=0;
+      if (isNaN(top3Order5)) top3Order5=0;
+      if (isNaN(top4Order5)) top4Order5=0;
+      
+
+      var totalTopsOrder1= topOrder1+top1Order1+top2Order1+top3Order1+top4Order1
+      var totalTopsOrder2=topOrder2+top1Order2+top2Order2+top3Order2+top4Order2
+      var totalTopsOrder3=topOrder3+top1Order3+top2Order3+top3Order3+top4Order3
+      var totalTopsOrder4=topOrder4+top1Order4+top2Order4+top3Order4+top4Order4
+      var totalTopsOrder5=topOrder5+top1Order5+top2Order5+top3Order5+top4Order5
 
     var placeNairobi = $("input#place-nairobi").val();
     var placeNakuru = $("input#place-nakuru").val();
