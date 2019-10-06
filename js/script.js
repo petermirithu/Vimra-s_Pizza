@@ -269,20 +269,6 @@ $(document).ready(function() {
     var commentName=$("input.name").val();
     var commentEmail=$("input.email").val();
     var commentText=$("textarea.message").val();
-    // var car1=parseInt(document.getElementById("car1").value);
-    // var car2=parseInt(document.getElementById("car2").value);
-    // var car3=parseInt(document.getElementById("car3").value);
-
-
-    var car1=parseInt($('#car1').find('option:selected').val());
-    var car2=parseInt($('#car2').find('option:selected').val());
-    var car4=parseInt($('#newDiv9 #pizza-size').find('option:selected').val());
-    var car3=parseInt($('#car3').find('option:selected').val());
-    
-    if (isNaN(car4)) car4=0;
-
-    var res=car1+car2+car4+car3
-    alert(res);
-    // alert(commentName+", Your message has been delivered."+"Thank you for visiting us");
+    alert(commentName+", Your message has been delivered."+"Thank you for visiting us");
   });
 });
