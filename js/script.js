@@ -180,460 +180,55 @@ $(document).ready(function() {
    
     var newOrder = new Order(inputpersonName, inputpersonEmail, inputpersonTelephone)
 
-    
-    var inputSize = $("input#pizza-size").val();
-    if (inputSize == "Small") {
-      var size0 = 100;
-    }else if (inputSize=="Medium") {
-      var size0 = 200;
-    }else if (inputSize=="Large") {
-      var size0= 300
-    }else{
-      var size0=0;
-    }
-    
-    var inputSize =$("#newDiv1 input#pizza-size").val();
-    if (inputSize == "Small") {
-      var size1 = 100;
-    }else if (inputSize=="Medium") {
-      var size1 = 200;
-    }else if (inputSize=="Large") {
-      var size1= 300
-    }else{
-      var size1=0;
-    }
- 
-    var inputSize =$("#newDiv2 input#pizza-size").val();
-    if (inputSize == "Small") {
-      var size2 = 100;
-    }else if (inputSize=="Medium") {
-      var size2 = 200;
-    }else if (inputSize=="Large") {
-      var size2= 300
-    }else{
-      var size2=0;
-    }
-
-    var inputSize =$("#newDiv3 input#pizza-size").val();
-    if (inputSize == "Small") {
-      var size3 = 100;
-    }else if (inputSize=="Medium") {
-      var size3 = 200;
-    }else if (inputSize=="Large") {
-      var size3= 300
-    }else{
-      var size3=0;
-    }
-
-    var inputSize =$("#newDiv4 input#pizza-size").val();
-    if (inputSize == "Small") {
-      var size4 = 100;
-    }else if (inputSize=="Medium") {
-      var size4 = 200;
-    }else if (inputSize=="Large") {
-      var size4= 300
-    }else{
-      var size4=0;
-    }
-
-    
-    var inputCrust = $("input#pizza-crust").val();
-    if (inputCrust=="Cripsy crust") {
-      var crust0=400;
-    }else if (inputCrust=="Craker Crust"){
-      var crust0=420;
-    }else if (inputCrust=="Pizza Bagels"){
-      var crust0=450;
-    }else if (inputCrust=="Detroit Crust"){
-      var crust0=500;
-    }else if (inputCrust=="Sicilian Style"){
-      var crust0=550;
-    }else if (inputCrust=="Flat-bread Crust"){
-      var crust0=580;
-    }else if (inputCrust=="Chicago Deep Dish"){
-      var crust0=650;  
-    }else if (inputCrust=="Pretzel Crust"){
-      var crust0=700;
-    }else if (inputCrust=="NYC-Style Crust"){
-      var crust0=750;
-    }else if (inputCrust=="Stuffed Dough"){
-      var crust0=750;
-    }else if (inputCrust=="Focaccia"){
-      var crust0=800;
-    }else{
-      var crust0=0;
-    }
-
-    var inputCrust =$("#newDiv1 input#pizza-crust").val();
-    if (inputCrust=="Cripsy crust") {
-      var crust1=400;
-    }else if (inputCrust=="Craker Crust"){
-      var crust1=420;
-    }else if (inputCrust=="Pizza Bagels"){
-      var crust1=450;
-    }else if (inputCrust=="Detroit Crust"){
-      var crust1=500;
-    }else if (inputCrust=="Sicilian Style"){
-      var crust1=550;
-    }else if (inputCrust=="Flat-bread Crust"){
-      var crust1=580;
-    }else if (inputCrust=="Chicago Deep Dish"){
-      var crust1=650;  
-    }else if (inputCrust=="Pretzel Crust"){
-      var crust1=700;
-    }else if (inputCrust=="NYC-Style Crust"){
-      var crust1=750;
-    }else if (inputCrust=="Stuffed Dough"){
-      var crust1=750;
-    }else if (inputCrust=="Focaccia"){
-      var crust1=800;
-    }else{
-      var crust1=0;
-    }
-
-    var inputCrust =$("#newDiv2 input#pizza-crust").val();
-    if (inputCrust=="Cripsy crust") {
-      var crust2=400;
-    }else if (inputCrust=="Craker Crust"){
-      var crust2=420;
-    }else if (inputCrust=="Pizza Bagels"){
-      var crust2=450;
-    }else if (inputCrust=="Detroit Crust"){
-      var crust2=500;
-    }else if (inputCrust=="Sicilian Style"){
-      var crust2=550;
-    }else if (inputCrust=="Flat-bread Crust"){
-      var crust2=580;
-    }else if (inputCrust=="Chicago Deep Dish"){
-      var crust2=650;  
-    }else if (inputCrust=="Pretzel Crust"){
-      var crust2=700;
-    }else if (inputCrust=="NYC-Style Crust"){
-      var crust2=750;
-    }else if (inputCrust=="Stuffed Dough"){
-      var crust2=750;
-    }else if (inputCrust=="Focaccia"){
-      var crust2=800;
-    }else{
-      var crust2=0;
-    }
-    
-    var inputCrust =$("#newDiv3 input#pizza-crust").val();
-    if (inputCrust=="Cripsy crust") {
-      var crust3=400;
-    }else if (inputCrust=="Craker Crust"){
-      var crust3=420;
-    }else if (inputCrust=="Pizza Bagels"){
-      var crust3=450;
-    }else if (inputCrust=="Detroit Crust"){
-      var crust3=500;
-    }else if (inputCrust=="Sicilian Style"){
-      var crust3=550;
-    }else if (inputCrust=="Flat-bread Crust"){
-      var crust3=580;
-    }else if (inputCrust=="Chicago Deep Dish"){
-      var crust3=650;  
-    }else if (inputCrust=="Pretzel Crust"){
-      var crust3=700;
-    }else if (inputCrust=="NYC-Style Crust"){
-      var crust3=750;
-    }else if (inputCrust=="Stuffed Dough"){
-      var crust3=750;
-    }else if (inputCrust=="Focaccia"){
-      var crust3=800;
-    }else{
-      var crust3=0;
-    }
-
-    var inputCrust =$("#newDiv4 input#pizza-crust").val();
-    if (inputCrust=="Cripsy crust") {
-      var crust4=400;
-    }else if (inputCrust=="Craker Crust"){
-      var crust4=420;
-    }else if (inputCrust=="Pizza Bagels"){
-      var crust4=450;
-    }else if (inputCrust=="Detroit Crust"){
-      var crust4=500;
-    }else if (inputCrust=="Sicilian Style"){
-      var crust4=550;
-    }else if (inputCrust=="Flat-bread Crust"){
-      var crust4=580;
-    }else if (inputCrust=="Chicago Deep Dish"){
-      var crust4=650;  
-    }else if (inputCrust=="Pretzel Crust"){
-      var crust4=700;
-    }else if (inputCrust=="NYC-Style Crust"){
-      var crust4=750;
-    }else if (inputCrust=="Stuffed Dough"){
-      var crust4=750;
-    }else if (inputCrust=="Focaccia"){
-      var crust4=800;
-    }else{
-      var crust4=0;
-    }
-
-    var inputTop = $("input#pizza-top").val();
-    if (inputTop=="Onions"){
-      var top0=100;
-    }else if (inputTop=="Sausage"){
-      var top0=200;
-    }else if(inputTop=="Pineapple"){
-      var top0=250;
-    }else if(inputTop=="Green Pepper"){
-      var top0=300;
-    }else if(inputTop=="Black Olives"){
-      var top0=400;
-    }else if(inputTop=="Bacon"){
-      var top0=420;
-    }else if(inputTop=="Mushroom"){
-      var top0=450;
-    }else if(inputTop=="Extra Cheese"){
-      var top0=480;
-    }else if(inputTop=="Pepporoni"){
-      var top0=500;
-    }else if(inputTop=="Chicken"){
-      var top0=600;
-    }else if(inputTop=="Beef"){
-      var top0=650;
-    }
-    
-    var inputTop = $("#newDiv1 input#pizza-top").val();
-    if (inputTop=="Onions"){
-      var top1=100;
-    }else if (inputTop=="Sausage"){
-      var top1=200;
-    }else if(inputTop=="Pineapple"){
-      var top1=250;
-    }else if(inputTop=="Green Pepper"){
-      var top1=300;
-    }else if(inputTop=="Black Olives"){
-      var top1=400;
-    }else if(inputTop=="Bacon"){
-      var top1=420;
-    }else if(inputTop=="Mushroom"){
-      var top1=450;
-    }else if(inputTop=="Extra Cheese"){
-      var top1=480;
-    }else if(inputTop=="Pepporoni"){
-      var top1=500;
-    }else if(inputTop=="Chicken"){
-      var top1=600;
-    }else if(inputTop=="Beef"){
-      var top1=650;
-    }
-
-    var inputTop = $("#newDiv2 input#pizza-top").val();
-    if (inputTop=="Onions"){
-      var top2=100;
-    }else if (inputTop=="Sausage"){
-      var top2=200;
-    }else if(inputTop=="Pineapple"){
-      var top2=250;
-    }else if(inputTop=="Green Pepper"){
-      var top2=300;
-    }else if(inputTop=="Black Olives"){
-      var top2=400;
-    }else if(inputTop=="Bacon"){
-      var top2=420;
-    }else if(inputTop=="Mushroom"){
-      var top2=450;
-    }else if(inputTop=="Extra Cheese"){
-      var top2=480;
-    }else if(inputTop=="Pepporoni"){
-      var top2=500;
-    }else if(inputTop=="Chicken"){
-      var top2=600;
-    }else if(inputTop=="Beef"){
-      var top2=650;
-    }
-
-    var inputTop = $("#newDiv3 input#pizza-top").val();
-    if (inputTop=="Onions"){
-      var top3=100;
-    }else if (inputTop=="Sausage"){
-      var top3=200;
-    }else if(inputTop=="Pineapple"){
-      var top3=250;
-    }else if(inputTop=="Green Pepper"){
-      var top3=300;
-    }else if(inputTop=="Black Olives"){
-      var top3=400;
-    }else if(inputTop=="Bacon"){
-      var top3=420;
-    }else if(inputTop=="Mushroom"){
-      var top3=450;
-    }else if(inputTop=="Extra Cheese"){
-      var top3=480;
-    }else if(inputTop=="Pepporoni"){
-      var top3=500;
-    }else if(inputTop=="Chicken"){
-      var top3=600;
-    }else if(inputTop=="Beef"){
-      var top3=650;
-    }
-
-    var inputTop = $("#newDiv4 input#pizza-top").val();
-    if (inputTop=="Onions"){
-      var top4=100;
-    }else if (inputTop=="Sausage"){
-      var top4=200;
-    }else if(inputTop=="Pineapple"){
-      var top4=250;
-    }else if(inputTop=="Green Pepper"){
-      var top4=300;
-    }else if(inputTop=="Black Olives"){
-      var top4=400;
-    }else if(inputTop=="Bacon"){
-      var top4=420;
-    }else if(inputTop=="Mushroom"){
-      var top4=450;
-    }else if(inputTop=="Extra Cheese"){
-      var top4=480;
-    }else if(inputTop=="Pepporoni"){
-      var top4=500;
-    }else if(inputTop=="Chicken"){
-      var top4=600;
-    }else if(inputTop=="Beef"){
-      var top4=650;
-    }
-    
-    var inputTop = $("#newDivTop1 input#pizza-top").val();
-    if (inputTop=="Onions"){
-      var ptop1=100;
-    }else if (inputTop=="Sausage"){
-      var ptop1=200;
-    }else if(inputTop=="Pineapple"){
-      var ptop1=250;
-    }else if(inputTop=="Green Pepper"){
-      var ptop1=300;
-    }else if(inputTop=="Black Olives"){
-      var ptop1=400;
-    }else if(inputTop=="Bacon"){
-      var ptop1=420;
-    }else if(inputTop=="Mushroom"){
-      var ptop1=450;
-    }else if(inputTop=="Extra Cheese"){
-      var ptop1=480;
-    }else if(inputTop=="Pepporoni"){
-      var ptop1=500;
-    }else if(inputTop=="Chicken"){
-      var ptop1=600;
-    }else if(inputTop=="Beef"){
-      var ptop1=650;
-    }
-    
-    var inputTop = $("#newDivTop2 input#pizza-top").val();
-    if (inputTop=="Onions"){
-      var ptop2=100;
-    }else if (inputTop=="Sausage"){
-      var ptop2=200;
-    }else if(inputTop=="Pineapple"){
-      var ptop2=250;
-    }else if(inputTop=="Green Pepper"){
-      var ptop2=300;
-    }else if(inputTop=="Black Olives"){
-      var ptop2=400;
-    }else if(inputTop=="Bacon"){
-      var ptop2=420;
-    }else if(inputTop=="Mushroom"){
-      var ptop2=450;
-    }else if(inputTop=="Extra Cheese"){
-      var ptop2=480;
-    }else if(inputTop=="Pepporoni"){
-      var ptop2=500;
-    }else if(inputTop=="Chicken"){
-      var ptop2=600;
-    }else if(inputTop=="Beef"){
-      var ptop2=650;
-    }
-
-    var inputTop = $("#newDivTop3 input#pizza-top").val();
-    if (inputTop=="Onions"){
-      var ptop3=100;
-    }else if (inputTop=="Sausage"){
-      var ptop3=200;
-    }else if(inputTop=="Pineapple"){
-      var ptop3=250;
-    }else if(inputTop=="Green Pepper"){
-      var ptop3=300;
-    }else if(inputTop=="Black Olives"){
-      var ptop3=400;
-    }else if(inputTop=="Bacon"){
-      var ptop3=420;
-    }else if(inputTop=="Mushroom"){
-      var ptop3=450;
-    }else if(inputTop=="Extra Cheese"){
-      var ptop3=480;
-    }else if(inputTop=="Pepporoni"){
-      var ptop3=500;
-    }else if(inputTop=="Chicken"){
-      var ptop3=600;
-    }else if(inputTop=="Beef"){
-      var ptop3=650;
-    }
-
-    var inputTop = $("#newDivTop4 input#pizza-top").val();
-    if (inputTop=="Onions"){
-      var ptop4=100;
-    }else if (inputTop=="Sausage"){
-      var ptop4=200;
-    }else if(inputTop=="Pineapple"){
-      var ptop4=250;
-    }else if(inputTop=="Green Pepper"){
-      var ptop4=300;
-    }else if(inputTop=="Black Olives"){
-      var ptop4=400;
-    }else if(inputTop=="Bacon"){
-      var ptop4=420;
-    }else if(inputTop=="Mushroom"){
-      var ptop4=450;
-    }else if(inputTop=="Extra Cheese"){
-      var ptop4=480;
-    }else if(inputTop=="Pepporoni"){
-      var ptop4=500;
-    }else if(inputTop=="Chicken"){
-      var ptop4=600;
-    }else if(inputTop=="Beef"){
-      var ptop4=650;
-    }
-
-    var inputTop = $("#newDivTop5 input#pizza-top").val();
-    if (inputTop=="Onions"){
-      var ptop5=100;
-    }else if (inputTop=="Sausage"){
-      var ptop5=200;
-    }else if(inputTop=="Pineapple"){
-      var ptop5=250;
-    }else if(inputTop=="Green Pepper"){
-      var ptop5=300;
-    }else if(inputTop=="Black Olives"){
-      var ptop5=400;
-    }else if(inputTop=="Bacon"){
-      var ptop5=420;
-    }else if(inputTop=="Mushroom"){
-      var ptop5=450;
-    }else if(inputTop=="Extra Cheese"){
-      var ptop5=480;
-    }else if(inputTop=="Pepporoni"){
-      var ptop5=500;
-    }else if(inputTop=="Chicken"){
-      var ptop5=600;
-    }else if(inputTop=="Beef"){
-      var ptop5=650;
-    }
-
     $("form#order-form").submit(function(event) {
-      event.preventDefault();
-      var add=function(size0,size1,size2,size3,size4,crust0,crust1,crust2,crust3,crust4,top0,top1,top2,top3,top4,ptop1,ptop2,ptop3,ptop4,ptop5) {
-        return size0+size1+size2+size3+size4+crust0+crust1+crust2+crust3+crust4+top0+top1+top2+top3+top4+ptop1+ptop2+ptop3+ptop4+ptop5
-      }
+      event.preventDefault();      
+      var size =parseInt($('#pizza-size').find('option:selected').val());   
+      var size1=parseInt($('#newDiv1 #pizza-size').find('option:selected').val());
+      var size2=parseInt($('#newDiv2 #pizza-size').find('option:selected').val());
+      var size3=parseInt($('#newDiv3 #pizza-size').find('option:selected').val());
+      var size4=parseInt($('#newDiv4 #pizza-size').find('option:selected').val());
+      var size5=parseInt($('#newDiv5 #pizza-size').find('option:selected').val());
+      var size6=parseInt($('#newDiv6 #pizza-size').find('option:selected').val());
+      var size7=parseInt($('#newDiv7 #pizza-size').find('option:selected').val());
+      var size8=parseInt($('#newDiv8 #pizza-size').find('option:selected').val());
+      var size9=parseInt($('#newDiv9 #pizza-size').find('option:selected').val());
       
-    var result1 = add(size0,size1,size2,size3,size4,crust0,crust1,crust2,crust3,crust4,top0,top1,top2,top3,top4,ptop1,ptop2,ptop3,ptop4,ptop5);
-    alert(result1);
+      if (isNaN(size1)) size1=0;
+      if (isNaN(size2)) size2=0;
+      if (isNaN(size3)) size3=0;
+      if (isNaN(size4)) size4=0;
+      if (isNaN(size5)) size5=0;
+      if (isNaN(size6)) size6=0;
+      if (isNaN(size7)) size7=0;
+      if (isNaN(size8)) size8=0;
+      if (isNaN(size9)) size9=0;
+
+      var totalSize = size+size1+size2+size3+size4+size5+size6+size7+size8+size9      
     });
   
-    // (size0+size1+size2+size3+size4+crust0+crust1+crust2+crust3+crust4+top0+top1+top2+top3+top4+ptop1+ptop2+ptop3+ptop4+ptop5);
+    var crust =parseInt($('#pizza-crust').find('option:selected').val());   
+      var crust1=parseInt($('#newDiv1 #pizza-crust').find('option:selected').val());
+      var crust2=parseInt($('#newDiv2 #pizza-crust').find('option:selected').val());
+      var crust3=parseInt($('#newDiv3 #pizza-crust').find('option:selected').val());
+      var crust4=parseInt($('#newDiv4 #pizza-crust').find('option:selected').val());
+      var crust5=parseInt($('#newDiv5 #pizza-crust').find('option:selected').val());
+      var crust6=parseInt($('#newDiv6 #pizza-crust').find('option:selected').val());
+      var crust7=parseInt($('#newDiv7 #pizza-crust').find('option:selected').val());
+      var crust8=parseInt($('#newDiv8 #pizza-crust').find('option:selected').val());
+      var crust9=parseInt($('#newDiv9 #pizza-crust').find('option:selected').val());
+      
+      if (isNaN(crust1)) crust1=0;
+      if (isNaN(crust2)) crust2=0;
+      if (isNaN(crust3)) crust3=0;
+      if (isNaN(crust4)) crust4=0;
+      if (isNaN(crust5)) crust5=0;
+      if (isNaN(crust6)) crust6=0;
+      if (isNaN(crust7)) crust7=0;
+      if (isNaN(crust8)) crust8=0;
+      if (isNaN(crust9)) crust9=0;
 
+      var totalCrust = crust+crust1+crust2+crust3+crust4+crust5+crust6+crust7+crust8+crust9
+    
 
 
 
@@ -647,12 +242,20 @@ $(document).ready(function() {
     var commentName=$("input.name").val();
     var commentEmail=$("input.email").val();
     var commentText=$("textarea.message").val();
-    var car1=parseInt(document.getElementById("car1").value);
-    var car2=parseInt(document.getElementById("car2").value);
-    var car3=parseInt(document.getElementById("car3").value);
+    // var car1=parseInt(document.getElementById("car1").value);
+    // var car2=parseInt(document.getElementById("car2").value);
+    // var car3=parseInt(document.getElementById("car3").value);
+
+
+    var car1=parseInt($('#car1').find('option:selected').val());
+    var car2=parseInt($('#car2').find('option:selected').val());
+    var car4=parseInt($('#newDiv9 #pizza-size').find('option:selected').val());
+    var car3=parseInt($('#car3').find('option:selected').val());
     
-    var res= car1+car2+car3
-    alert(res)
+    if (isNaN(car4)) car4=0;
+
+    var res=car1+car2+car4+car3
+    alert(res);
     // alert(commentName+", Your message has been delivered."+"Thank you for visiting us");
   });
 });
