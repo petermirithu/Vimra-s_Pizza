@@ -32,11 +32,11 @@ var counter2=1;
 $(document).ready(function() {
   $(function() {
     $('#order-form').change(function(){
-      var str = "Name: " + $( "input#names" ).val() + "<br>Email: " + $( "input#email" ).val() +"<br>Telephone N.O: " + $( "input#telephone").val()+
-      "<br>Sizes you chose: "+$( "select#pizza-size option:selected" ).text()+
-      "<br>Crusts you chose: "+$( "select#pizza-crust option:selected" ).text()+
-      "<br>Tops you chose: "+$( "select#pizza-top option:selected" ).text()+
-      "<br>Place of Delivery: "+$( "select#place-nairobi option:selected" ).text();      
+      var str = "Name: " + $( "input#names" ).val() + "<br><br>Email: " + $( "input#email" ).val() +"<br><br>Telephone N.O: " + $( "input#telephone").val()+
+      "<br><br>Sizes you chose: "+$( "select#pizza-size option:selected" ).text()+
+      "<br><br>Crusts you chose: "+$( "select#pizza-crust option:selected" ).text()+
+      "<br><br>Tops you chose: "+$( "select#pizza-top option:selected" ).text()+
+      "<br><br>Place of Delivery: "+$( "select#place-nairobi option:selected" ).text();      
       $("#results").html(str);
     });
   });
