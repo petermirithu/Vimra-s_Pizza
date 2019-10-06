@@ -36,7 +36,11 @@ h3{
 }
 #submit{
   color:  black;
-  background-color: green
+  background-color: green  
+}
+#submit:hover{
+  background-color: black;
+  color:  azure;
 }
 #summary{
   background-image: url("../images/order2.jpeg");
