@@ -125,7 +125,7 @@
       <span class="btn btn-primary" id="another-pizza">Order another Pizza</span>
       
       <div class="form-group">
-        <label for="deliver">Do you want your Pizza delivered ?</label>
+        <h2>Do you want your Pizza delivered ?</h2>
         <span class="btn btn-outline-primary" id ="deliver-yes">Yes</span>
         <span class="btn btn-outline-primary" id ="deliver-no">No</span>
       </div>
@@ -133,34 +133,33 @@
         
       </div>
 
-      <button type="submit">Submit Order</button>
+      <button type="submit" class="form-control" id="submit">Submit Order</button>
     </form>
     <br>
 
-    
-        <h1>Order Summary:</h1>
-        <div id="results">
+    <div class="summary">
+      <h1>Order Summary:</h1>
+      <div id="results">
 
-        </div>
-      
+      </div>      
       <p>Grand Total Prize of your order is: <span class="grand-total"></span></p>
     </div>
-  </div>
 
     <div id="about">
+      <div class="jumbotron">
       <h2>About Us</h2>
-      <p>This Pizza company was started by Peter Mirithu in the year 2018.<br>
+        <p>This Pizza company was started by Peter Mirithu in the year 2018.<br>
             It has been a great experience satifying our customer's needs.</p>
-
+      </div>
       <h3>Openning Hours</h3>  
       <div class="row">
-          <div class="col">
+          <div class="col btn btn-success" >
             <p>Monday 10.00 - 21.00</p>
             <p>Tuesday 10.00 - 21.00</p>
             <p>Wednesday 10.00 - 21.00</p>
             <p>Thursday 10:00 - 21:00</p>
           </div>
-          <div class="col">
+          <div class="col btn btn-danger">
             <p>Friday 10:00 - 21:00</p>
             <p>Saturday 10:00 - 23:00</p>
             <p>Sunday Closed</p>
@@ -190,18 +189,6 @@
             2019</h6>
       </div>
     </div>
-
-    
-    
-        
-    
-
-  
-    
-  
-
-
-
-
+    </div>
 </body>
 </html>
